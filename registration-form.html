@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // Подключаем файлы -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/emojione_owl.png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Форма регистрации</title>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <a href="#" class="logo"> </a>
+            </div>
+            <div class="col-12 col-lg-3 offset-lg-6">
+                <div class="box d-flex align-items-center">
+                    <a href="#" class="box__img d-flex">Напишите нам</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="registration-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+
+                <div class="registration">
+                    <h2 class="registration__title">Регистрация</h2>
+                        <form class="form d-flex flex-column align-items-center">
+                            <input  name="name" required placeholder="Имя"  class="form__input">
+                            <input  name="last-name" required placeholder="Фамилия"  class="form__input">
+                            <input  name="class" required placeholder="Класс"  class="form__input">
+                            <input  name="group" required placeholder="Группа здоровья"  class="form__input">
+                            <button class="book__btn form-btn" type="submit">Зарегистрироваться</button>
+                        </form>
+                    <div class="registration__treatment d-flex justify-content-center">
+                        <label class="checkbox-other">
+                            <input class="checkbox" type="checkbox" checked >
+                            <span class="fake"></span>
+                            <span class="registration__text">Я согласен на обработку данных</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="registration enter">
+                    <form class="form form__enter d-flex flex-column align-items-center">
+                    <h2 class="registration__title">Вход</h2>
+                    <input  name="email" required placeholder="Введите логин"  class="form__input enter__input ">
+                        <a href="#" class="enter__link">Забыли логин?</a>
+                    <input  name="password" type="password" required placeholder="Введите пароль"  class="form__input enter__input">
+                        <a href="#" class="enter__link" id="enter__link" >Забыли пароль?</a>
+                        <div class="profile-recovery ">
+                            <button class="close"  type="button"></button>
+                            <h2 class="profile__title">Восстановление профиля</h2>
+                            <form class="form form__enter d-flex flex-column align-items-center">
+                                <input  name="email" required placeholder="Введите адрес электронной почты"  class="form__input ">
+                                <button class="book__btn form-btn " type="submit">Отправить</button>
+                            </form>
+                        </div>
+                        <button class="book__btn form-btn enter-btn" type="button">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <a href="#" class="logo footer-logo"> </a>
+                <a href="#" class="footer__defender">Все права защищены  2022</a>
+            </div>
+            <div class="col-12 col-lg-2 offset-lg-2 d-flex">
+                <a href="#header" class="footer__row"></a>
+            </div>
+            <div class="col-12 col-lg-3 offset-lg-2">
+                <div class="footer-box-wrap">
+                    <a href="#" class="footer__box d-flex">
+                        <p class="footer_link_text">Напишите нам</p>
+                    </a>
+                    <a href="tel:+78122460731 " class="footer__call d-flex align-items-center"> +7 (812) 246 07 31 </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrap">
+        <div class="overlay"></div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
